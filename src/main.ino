@@ -3,13 +3,10 @@
 #include <LiquidCrystal_I2C.h>
 
 LiquidCrystal_I2C lcd(0x20,16,2);
-int bp1 = 2;
-int button_state;
 int brochepot = A0;
 int valpot;
 int conversion;
 Servo servo;
-int convesion_old;
 
 void setup() {
   servo.attach(3);
