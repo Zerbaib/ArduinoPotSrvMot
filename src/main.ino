@@ -19,7 +19,7 @@ void setup() {
 
 void loop() {
   valpot = analogRead(brochepot);
-  conversion = map(valpot, 0, 1024, 0, 180);
+  conversion = map(valpot, 0, 1023, 0, 180);
   lcd.setCursor(1,1);
   lcd.print("Potent.: " + String(conversion));
   servo.write(conversion);
