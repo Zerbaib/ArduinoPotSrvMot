@@ -7,7 +7,7 @@ int conversion;
 Servo servo;
 
 void setup() {
-  servo.attach(7);
+  servo.attach(2);
 }
 
 void loop() {
